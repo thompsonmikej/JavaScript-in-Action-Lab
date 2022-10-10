@@ -8,7 +8,7 @@
 // // Print dayOfWeek to the console
 // console.log(dayOfWeek);
 
-// // On the following line, change the value of dayOfWeek so that it has the value Friday. 
+// // On the following line, change the value of dayOfWeek so that it has the value Friday.
 // dayOfWeek = "Friday";
 
 // // Print the statement “I can’t wait for Friday!” using the dayOfWeek variable
@@ -108,10 +108,55 @@
 
 // Write your own “for” loop that will display the message “JavaScript is cool!” 7 times.
 
-function printSeven(){
-    for (let i = 0; i < 7; i++) {
-        console.log('JavaScript is cool!');
-    }
+// function printSeven(){
+//     for (let i = 0; i < 7; i++) {
+//         console.log('JavaScript is cool!');
+//     }
+// }
+// printSeven()
+
+
+// Task 2
+// Write your own “for” loop that will display the numbers 0 - 10, one number per loop.You will need to utilize a variable for this!
+
+
+// function printOneByOne() {
+//     for (let i = 0; i < 11; i++) {
+//         console.log(i);
+//     }
+// }
+// outputNumbers= printOneByOne()
+
+// function wordSequence() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log('hello\ngoodbye');
+//     }
+// }
+// alternatingWords = wordSequence()
+
+
+// Task 3
+// Write a for loop that will print the following sequence:
+function wordSequence() {
+    for (let i = 0; i < 5; i++) {
+        console.log('hello');
+        console.log('goodbye');
+    }   
 }
-printSeven()
+alternatingWords = wordSequence()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
