@@ -137,13 +137,69 @@
 
 // Task 3
 // Write a for loop that will print the following sequence:
-function wordSequence() {
-    for (let i = 0; i < 5; i++) {
-        console.log('hello');
-        console.log('goodbye');
-    }   
+// function wordSequence() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log('hello');
+//         console.log('goodbye');
+//     }
+// }
+// alternatingWords = wordSequence()
+
+
+// Functions
+// Task 1: Favorite Movie(void functions)
+// Create an appropriately named variable and assign it the value of the name of your favorite movie.
+// let favoriteMovie;
+// favoriteMovie = "Spiderman";
+// // On the next line, print this variable to the console.Run your code to test it out.
+// console.log(favoriteMovie);
+
+//     Now, move the previous two lines of code you wrote into a function named printMovieName
+
+// function printMovieName() {
+//     favoriteMovie = "Spiderman";
+//     console.log(favoriteMovie);
+// }
+
+
+// Run your code again.Why does the movie name no longer print ? (See slide 15 of the Javascript in Action powerpoint)
+// Now do what slide 15 states is required for a function to run so you can test it out!(Hint: it's the bottom half of the slide!)
+
+// printMovieName()
+
+// Task 2: Favorite Band(return functions)
+// Write a function that asks a user to enter their favorite band
+
+function yourFavoriteBand() {
+  let favoriteBand;
+favoriteBand = prompt("Enter your favorite band");
+// On the next line, the function should return the user’s response 
+return (favoriteBand);  
 }
-alternatingWords = wordSequence()
+// When you call the function, save the returned result as a new variable. 
+theBand = yourFavoriteBand(); 
+// After the function is called, print the returned result.
+console.log(theBand);
+
+// Task 3: Concert(parameters)
+// Create a new function called concertDisplay.This function should have one parameter called musicalAct
+
+let musicalAct;
+musicalAct = theBand
+function concertDisplay(musicalAct) {
+    let myStreet;
+// Inside the function, ask the user to enter the street they live on and save it as a variable called myStreet. 
+    myStreet = prompt('Enter the street of your residence')
+// Print a string that combines the variable that holds the user’s response along with the musicalAct parameter.The message should end up saying “It would be great if < musicalAct> played a show on <myStreet>!”
+    console.log(`It would be great if ${ musicalAct} played a show on ${myStreet}!`)
+}
+concertDisplay(musicalAct)
+
+
+//     Now when you call the concertDisplay function, pass in the variable that got returned from the Favorite Band section.
+
+
+
 
 
 
