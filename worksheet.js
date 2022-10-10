@@ -1,3 +1,5 @@
+"use strict";
+
 // Task 1: Days of the week
 // Create a variable called dayOfWeek assign it a value of the string Monday.
 let dayOfWeek;
@@ -50,7 +52,7 @@ if (timeOfDay >= 0 && timeOfDay < 1200) {
 else if(timeOfDay >= 1200 && timeOfDay < 1700){
     myFavoriteMeal = `meatballs`;
 }
-else if(timeOfDay >= 1700){
+else if (timeOfDay >= 1700 && timeOfDay < 2400){
     myFavoriteMeal = `lasagna`;
 }
 console.log(myFavoriteMeal);
@@ -66,12 +68,40 @@ console.log(myFavoriteMeal);
 
 
 // Task 2: Random Number
-// Declare a variable to store a random number between 0 and 10. You will need to do some research to determine how to generate a random number in JavaScript. 
-// A good search term to use: “random number JavaScript” 
-// If the number is between 0 and 2, print to the console “Beatles” 
-// If the number is between 3 and 5, print to the console “Stones” 
-// If the number is between 6 and 8, print to the console “Floyd” 
-// If the number is equal to 9 or 10, print to the console “Hendrix”    
+// Declare a variable to store a random number between 0 and 10. You will need to do some research to determine how to generate a random number in JavaScript.
+
+/* HTML--  <p id="demo"></p> */
+// document.getElementById("demo").innerHTML = Math.floor(Math.random() * 11);
+
+// function getRndInteger(min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min;
+// }
+
+let returnValue;
+function getRndInteger(min, max) {  //Uncaught syntax error: unexpected number
+    return Math.floor(Math.random() * (10 - 0)) + 0;
+}
+randomInteger = getRndInteger()
+
+// A good search term to use: “random number JavaScript” see: https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_0_10
+// If the number is between 0 and 2, print to the console “Beatles”
+
+if (randomInteger >= 0 && randomInteger <= 2) {
+    returnValue = `Beatles`;
+}
+// If the number is between 3 and 5, print to the console “Stones”
+else if (randomInteger >= 3 && randomInteger <=5) {
+    returnValue = `Stones`;
+}
+// If the number is between 6 and 8, print to the console “Floyd”
+else if (randomInteger >= 6 && randomInteger <= 8) {
+    returnValue = `Floyd`;
+}
+// If the number is equal to 9 or 10, print to the console “Hendrix”
+else if (randomInteger >= 9 && randomInteger <= 10) {
+    returnValue = `Hendrix`;
+}
+console.log(returnValue);
 
 // “For” Loops
 // In JavaScript, loops are an important tool that allow developers to execute a block of code over and over as long as a condition holds true.This section will allow you to practice a for loop and while loop.
